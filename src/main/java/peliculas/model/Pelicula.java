@@ -29,6 +29,7 @@ public class Pelicula {
     public String getGenero()   {return genero;}
     public String getSinopsis() {return sinopsis;}
 
+    public void setId(Long id)               {this.id = id;}
     public void setTitulo(String titulo)     {this.titulo = titulo;}
     public void setAnio(int anio)            {this.anio = anio;}
     public void setDirector(String director) {this.director = director;}
