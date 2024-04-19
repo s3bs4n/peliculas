@@ -2,6 +2,7 @@ package peliculas.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,6 +25,7 @@ import org.slf4j.LoggerFactory;
 
 
 
+
 @RestController
 @RequestMapping("/peliculas")
 public class PeliculaController {
@@ -35,7 +37,7 @@ public class PeliculaController {
 
     @GetMapping
     public List<Pelicula> getAllPeliculas() {
-        log.info("get /peliculas");
+        log.info("GET /peliculas");
         log.info("Retornando todas las peliculas");
         return peliculaService.getAllPeliculas();
     }
