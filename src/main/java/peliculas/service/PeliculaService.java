@@ -4,6 +4,8 @@ import peliculas.model.Pelicula;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.http.ResponseEntity;
+
 public interface PeliculaService {
 
     List<Pelicula> getAllPeliculas();

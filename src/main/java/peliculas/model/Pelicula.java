@@ -17,7 +17,7 @@ public class Pelicula {
 // Getters & Setters
 // /////
     private String titulo;
-    private int anio;
+    private int    anio;
     private String director;
     private String genero;
     private String sinopsis;
